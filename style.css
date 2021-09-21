@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+}
+section:nth-of-type(1){
+    background-color: #FEFBF3;
+    position: fixed;
+}
+section:nth-of-type(2){
+    background-color: #9D9D9D;
+    position: absolute;
+    top: 100vh;
+}
+section:nth-of-type(3){
+    background-color: #79B4B7;
+    position: absolute;
+    top: 200vh;
+}
+
+div.section-1-container{
+    width: 100%;
+    /* max-width: 1200px; */
+    height: 100vh;
+    margin: auto;
+    position: fixed;
+    /* display: grid;
+    justify-content: center;
+    align-content: center;
+    pointer-events: none; */
+    pointer-events: none;
+    
+}
+
+    div.section-1-background{
+        position: relative;
+        pointer-events: none;
+    }
+    div.section-1-background img{
+        position: absolute;
+        width: 100%;
+        /* height: 100vh; */
+        z-index: 100;
+        translate: 0px -100px;
+
+    }
+    div.section-1-background img:nth-of-type(1){
+        z-index: 10;
+    }
+    div.section-1-background img:nth-of-type(2){
+        z-index: 9;
+    }
+    div.section-1-background img:nth-of-type(3){
+        z-index: 8;
+    }
+    div.section-1-background img:nth-of-type(4){
+        z-index: 7;
+    }
+    div.section-1-background img:nth-of-type(5){
+        z-index: 6;
+    }
+
+    div.section-1-container p:nth-of-type(1) {
+        font-family: 'Montserrat', sans-serif;
+        font-size: xxx-large;
+        color: #79B4B7;
+    }
+    div.section-1-container p:nth-of-type(2) {
+        font-family: 'Montserrat', sans-serif;
+        font-size: xx-large;
+        color: #9D9D9D;
+    }
+
+
+div.section-2-container{
+
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-auto-flow: column;
+    
+}
+    div.box{
+        background-color: aqua;
+        width: 250px;
+        height: 250px;
+        opacity: 1;
+        transition: all 1s ease-in;
+        margin-bottom: 50px;
+    }
+
+    div.box:hover{
+        background-color: aquamarine;
+        transition: all .25s ease-in;
+    }
+
